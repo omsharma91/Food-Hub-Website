@@ -1,0 +1,2194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-xl navbar-light bg-primary" aria-label="Sixth navbar example" id="navbar">
+        <div class="container-fluid main">
+            <a class="navbar-brand grn" href="#">FOOD_HUB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
+                aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse list" id="navbarsExample06">
+                <ul class="me-auto mb-2">
+                    <li class="nav-item" id="home">
+                        <i class="fa-solid fa-house gp"></i>
+                        <a class="" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item" id="offer">
+                        <i class="fa-solid fa-tag gp"></i>
+                        <a class="" href="#">Offer</a>
+                    </li>
+                    <li class="nav-item" id="help">
+                        <i class="fa-solid fa-handshake-angle gp"></i>
+                        <a class="" href="#">Help</a>
+                    </li>
+                    <li class="nav-item" id="searchh">
+                        <i class="fa-solid fa-magnifying-glass gp"></i>
+                        <a class="" href="#">Search</a>
+                    </li>
+                    <li class="nav-item" id="signin">
+                        <i class="fa-solid fa-right-to-bracket gp"></i>
+                        <a class="" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item" id="cart">
+                        <i class="fa-solid fa-cart-shopping gp"></i>
+                        <a class="" href="#">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--cart section-->
+    <div class="cartpage hide" id="cartpages">
+        <div>
+            <h1 id="crt">nothing to show here</h1>
+        </div>
+    </div>
+
+    <!--help section-->
+    <div class="accordion m-4 g-3 hide" id="accordionPanelsStayOpenExample">
+        <h1>Legal</h1>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Terms of use
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Privacy Policies
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Cancellation and Refund
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <!--faq section-->
+        <h1>FAQs</h1>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Customer Care Number
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse
+                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                        overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                        this with custom CSS or overriding our default variables. It's also worth noting that just about
+                        any
+                        HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        I Want To Provide Feedback
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that
+                        just about any HTML can go within the <code>.accordion-body</code>, though the transition does
+                        limit
+                        overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        I Want To Cancelle My Order
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that
+                        just about any HTML can go within the <code>.accordion-body</code>, though the transition does
+                        limit
+                        overflow.
+                    </div>
+                </div>
+            </div>
+
+    </div>        
+
+    <!--search page-->
+    <div class="search m-4 p-3 g-3 hide" id="searchpage">
+        <div class="d-flex">
+            <input type="text" class="form-control mr-sm-2 mb-2" id="searchInput"
+                placeholder="Search for food, drinks, or restaurant" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 m-3" type="submit">Search</button>
+        </div>
+        <div class="contain" id="searchproduct">
+            <div class="box">
+                <img src="roll_icon.jpg" alt=""  class="icon">
+                <h1>Roll</h1>
+            </div>
+            <div class="box">
+                <img src="briyaniicon.jpg" alt="" class="icon">
+                <h1>Briyani</h1>
+            </div>
+            <div class="box">
+                <img src="momoicon.jpg" alt=""  class="icon">
+                <h1>Momo</h1>
+            </div>
+            <div class="box">
+                <img src="dimsumicon1.jpg" alt="" class="icon">
+                <h1>Dim Sum</h1>
+            </div>
+            <div class="box">
+                <img src="burgericon.jfif" alt="" class="icon">
+                <h1>Burger</h1>
+            </div>
+            <div class="box">
+                <img src="pizzaicon.jpg" alt="" class="icon">
+                <h1>Pizza</h1>
+            </div>
+            <div class="box">
+                <img src="bakery.jpg" alt="" class="icon">
+                <h1>Bakery</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!--offer page-->
+    <div class="hide" id="offerpage">
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <header class="deal">Best Deal With Best Price Try It Now.....</header>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col ">
+                        <div class="card shadow-sm round">
+                            <img src="momocombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Momo Combo</h1>
+                                <p class="card-text">Indulge in a delectable platter of our handcrafted momos, served
+                                    steaming hot with a side of spicy tomato chutney and a refreshing drink.
+                                    This combo is a mix of juicy chicken, flavorful vegetable, and savory pork momos.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group price">
+                                        <h1> Price: </h1>
+                                        <span><del> RS 799 </del> RS 599 </span>
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Grilled Meat Platter</h1>
+                                <p class="card-text">Our Grilled Meat Platter brings together a variety of meats—spicy
+                                    chicken wings, smoky beef ribs, and marinated pork chops. Served with crispy fries
+                                    and a
+                                    fresh garden salad for a balanced yet indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="pizzacombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Combo</h1>
+                                <p class="card-text">Gather around for a feast! Our Family Feast Combo includes two
+                                    large
+                                    pizzas, a side of golden fries, and a bottle of soda to share. Perfect for family
+                                    nights
+                                    or friendly gatherings!.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="rollcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Premium Roll Combo</h1>
+                                <p class="card-text">Dive into a gourmet selection of premium rolls, crafted with exotic
+                                    flavors and fresh ingredients. Enjoy the taste of tender chicken tikka, succulent
+                                    lamb,
+                                    and vibrant veggies, all packed in one delicious combo for an unforgettable meal
+                                    experience.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="chowmin.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Chow Mein Combo</h1>
+                                <p class="card-text">Bring the family together with our Family Feast Chow Mein Combo.
+                                    Generous portions of stir-fried noodles with chicken, beef, and veggies,
+                                    complemented by
+                                    sides of crispy spring rolls and sweet chili dipping sauce, perfect for sharing.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="friedrice.jpg" class="thumnail round" alt="">
+                            <div class="card-body">
+                                <h1 class="title">Chicken Fried Rice Combo</h1>
+                                <p class="card-text">Enjoy tender chicken chunks stir-fried with seasoned rice, crunchy
+                                    vegetables, and aromatic spices. Paired with a serving of chicken wings and a tangy
+                                    chili sauce, this combo is a feast for the senses.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="vegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">North Indian Veg Feast Combo</h1>
+                                <p class="card-text">A royal spread of North Indian delicacies featuring shahi paneer,
+                                    dal
+                                    makhani, pulao, butter naan, and a crisp vegetable salad. Paired with raita and
+                                    gulab
+                                    jamun for dessert, it’s a truly indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Chicken Feast Combo</h1>
+                                <p class="card-text">Indulge in our Classic Chicken Feast! Enjoy tender, juicy chicken
+                                    grilled to perfection, served with a side of creamy mashed potatoes, crisp coleslaw,
+                                    and
+                                    a buttery dinner roll. Perfect for a hearty meal that satisfies every craving.</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="briyanicombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Hyderabadi Biryani Combo</h1>
+                                <p class="card-text">Taste the authentic flavors of Hyderabad with our signature
+                                    Hyderabadi
+                                    Biryani. Slow-cooked, marinated chicken/mutton blends with fragrant rice and secret
+                                    spices to create an irresistible dish. Paired with tangy raita and spicy mirchi ka
+                                    salan, this combo is sure to transport your taste buds.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary ">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--sidebar-->
+    <div id="bar">
+        <div class="slidebar hide" id="sidebar">
+            <div>
+                <div>
+                    <i class="fa-regular fa-circle-xmark" id="cross"></i>
+                    <span></span>
+                    <div class="">Login</div>
+                    <div class=""></div>
+                    <div class="">or <a class="text-white">create an account</a></div>
+                </div>
+                <form>
+                    <div>
+                        <div class="phoneno">
+                            <input class="" type="tel" name="mobile" id="mobile" value="" placeholder="Phone number">
+                        </div>
+                    </div>
+                    <div class="terms"><span><input type="checkbox" name="" id="check"></span>By clicking on box, I
+                        accept the <a class="text-white">Terms & Conditions</a>
+                        <a class="text-white">Privacy Policy</a>
+                    </div>
+                    <div class=""><a class=""><input type="submit" class="sbmt" placeholder="Login" id="submit"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--list of product-->
+    <div class="contain" id="product">
+        <div class="box">
+            <img src="roll_icon.jpg" alt="" id="roll" class="icon">
+            <h1>Roll</h1>
+        </div>
+        <div class="box">
+            <img src="briyaniicon.jpg" alt="" id="briyani" class="icon">
+            <h1>Briyani</h1>
+        </div>
+        <div class="box">
+            <img src="momoicon.jpg" alt="" id="momo" class="icon">
+            <h1>Momo</h1>
+        </div>
+        <div class="box">
+            <img src="dimsumicon1.jpg" alt="" id="dimsum" class="icon">
+            <h1>Dim Sum</h1>
+        </div>
+        <div class="box">
+            <img src="burgericon.jfif" alt="" id="Burger" class="icon">
+            <h1>Burger</h1>
+        </div>
+        <div class="box">
+            <img src="pizzaicon.jpg" alt="" id="pizza" class="icon">
+            <h1>Pizza</h1>
+        </div>
+        <div class="box">
+            <img src="bakery.jpg" alt="" id="bakery" class="icon">
+            <h1>Bakery</h1>
+        </div>
+
+    </div>
+
+    <!--roll page -->
+    <div class="headdr hide" id="rollpage">
+            <header>ROLL FOR YOU , YOU WANT TO TRY THIS! ?</header>
+            <h1>ORDER IT NOW</h1>    
+            <div class="album py-5 bg-light">
+                <div class="container">    
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col ">
+                            <div class="card shadow-sm round">
+                                <img src="momocombo.jpg" class="thumnail round" alt="">
+    
+                                <div class="card-body">
+                                    <h1 class="title">Classic Momo Combo</h1>
+                                    <p class="card-text">Indulge in a delectable platter of our handcrafted momos, served
+                                        steaming hot with a side of spicy tomato chutney and a refreshing drink.
+                                        This combo is a mix of juicy chicken, flavorful vegetable, and savory pork momos.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-primary">View
+                                                Details</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm round">
+                                <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+    
+                                <div class="card-body">
+                                    <h1 class="title">Grilled Meat Platter</h1>
+                                    <p class="card-text">Our Grilled Meat Platter brings together a variety of meats—spicy
+                                        chicken wings, smoky beef ribs, and marinated pork chops. Served with crispy fries
+                                        and a
+                                        fresh garden salad for a balanced yet indulgent meal.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-primary">View
+                                                Details</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm round">
+                                <img src="pizzacombo.jpg" class="thumnail round" alt="">
+    
+                                <div class="card-body">
+                                    <h1 class="title">Family Feast Combo</h1>
+                                    <p class="card-text">Gather around for a feast! Our Family Feast Combo includes two
+                                        large
+                                        pizzas, a side of golden fries, and a bottle of soda to share. Perfect for family
+                                        nights
+                                        or friendly gatherings!.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-primary">View
+                                                Details</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="card shadow-sm round">
+                                <img src="rollcombo.jpg" class="thumnail round" alt="">
+    
+                                <div class="card-body">
+                                    <h1 class="title">Premium Roll Combo</h1>
+                                    <p class="card-text">Dive into a gourmet selection of premium rolls, crafted with exotic
+                                        flavors and fresh ingredients. Enjoy the taste of tender chicken tikka, succulent
+                                        lamb,
+                                        and vibrant veggies, all packed in one delicious combo for an unforgettable meal
+                                        experience.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-primary">View
+                                                Details</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm round">
+                                <img src="chowmin.jpg" class="thumnail round" alt="">
+    
+                                <div class="card-body">
+                                    <h1 class="title">Family Feast Chow Mein Combo</h1>
+                                    <p class="card-text">Bring the family together with our Family Feast Chow Mein Combo.
+                                        Generous portions of stir-fried noodles with chicken, beef, and veggies,
+                                        complemented by
+                                        sides of crispy spring rolls and sweet chili dipping sauce, perfect for sharing.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-primary">View
+                                                Details</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm round">
+                                <img src="friedrice.jpg" class="thumnail round" alt="">
+                                <div class="card-body">
+                                    <h1 class="title">Chicken Fried Rice Combo</h1>
+                                    <p class="card-text">Enjoy tender chicken chunks stir-fried with seasoned rice, crunchy
+                                        vegetables, and aromatic spices. Paired with a serving of chicken wings and a tangy
+                                        chili sauce, this combo is a feast for the senses.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-primary">View
+                                                Details</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="card shadow-sm round">
+                                <img src="vegcombo.jpg" class="thumnail round" alt="">
+    
+                                <div class="card-body">
+                                    <h1 class="title">North Indian Veg Feast Combo</h1>
+                                    <p class="card-text">A royal spread of North Indian delicacies featuring shahi paneer,
+                                        dal
+                                        makhani, pulao, butter naan, and a crisp vegetable salad. Paired with raita and
+                                        gulab
+                                        jamun for dessert, it’s a truly indulgent meal.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-primary">View
+                                                Details</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm round">
+                                <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+    
+                                <div class="card-body">
+                                    <h1 class="title">Classic Chicken Feast Combo</h1>
+                                    <p class="card-text">Indulge in our Classic Chicken Feast! Enjoy tender, juicy chicken
+                                        grilled to perfection, served with a side of creamy mashed potatoes, crisp coleslaw,
+                                        and
+                                        a buttery dinner roll. Perfect for a hearty meal that satisfies every craving.</p>
+    
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-primary">View
+                                                Details</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm round">
+                                <img src="briyanicombo.jpg" class="thumnail round" alt="">
+    
+                                <div class="card-body">
+                                    <h1 class="title">Hyderabadi Biryani Combo</h1>
+                                    <p class="card-text">Taste the authentic flavors of Hyderabad with our signature
+                                        Hyderabadi
+                                        Biryani. Slow-cooked, marinated chicken/mutton blends with fragrant rice and secret
+                                        spices to create an irresistible dish. Paired with tangy raita and spicy mirchi ka
+                                        salan, this combo is sure to transport your taste buds.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-primary ">View
+                                                Details</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <!--briyani page-->
+    <div class="headdr hide" id="briyanipage">
+        <header>briyani FOR YOU , YOU WANT TO TRY THIS! ?</header>
+        <h1>ORDER IT NOW</h1>    
+        <div class="album py-5 bg-light">
+            <div class="container">    
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col ">
+                        <div class="card shadow-sm round">
+                            <img src="momocombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Momo Combo</h1>
+                                <p class="card-text">Indulge in a delectable platter of our handcrafted momos, served
+                                    steaming hot with a side of spicy tomato chutney and a refreshing drink.
+                                    This combo is a mix of juicy chicken, flavorful vegetable, and savory pork momos.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Grilled Meat Platter</h1>
+                                <p class="card-text">Our Grilled Meat Platter brings together a variety of meats—spicy
+                                    chicken wings, smoky beef ribs, and marinated pork chops. Served with crispy fries
+                                    and a
+                                    fresh garden salad for a balanced yet indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="pizzacombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Combo</h1>
+                                <p class="card-text">Gather around for a feast! Our Family Feast Combo includes two
+                                    large
+                                    pizzas, a side of golden fries, and a bottle of soda to share. Perfect for family
+                                    nights
+                                    or friendly gatherings!.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="rollcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Premium Roll Combo</h1>
+                                <p class="card-text">Dive into a gourmet selection of premium rolls, crafted with exotic
+                                    flavors and fresh ingredients. Enjoy the taste of tender chicken tikka, succulent
+                                    lamb,
+                                    and vibrant veggies, all packed in one delicious combo for an unforgettable meal
+                                    experience.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="chowmin.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Chow Mein Combo</h1>
+                                <p class="card-text">Bring the family together with our Family Feast Chow Mein Combo.
+                                    Generous portions of stir-fried noodles with chicken, beef, and veggies,
+                                    complemented by
+                                    sides of crispy spring rolls and sweet chili dipping sauce, perfect for sharing.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="friedrice.jpg" class="thumnail round" alt="">
+                            <div class="card-body">
+                                <h1 class="title">Chicken Fried Rice Combo</h1>
+                                <p class="card-text">Enjoy tender chicken chunks stir-fried with seasoned rice, crunchy
+                                    vegetables, and aromatic spices. Paired with a serving of chicken wings and a tangy
+                                    chili sauce, this combo is a feast for the senses.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="vegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">North Indian Veg Feast Combo</h1>
+                                <p class="card-text">A royal spread of North Indian delicacies featuring shahi paneer,
+                                    dal
+                                    makhani, pulao, butter naan, and a crisp vegetable salad. Paired with raita and
+                                    gulab
+                                    jamun for dessert, it’s a truly indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Chicken Feast Combo</h1>
+                                <p class="card-text">Indulge in our Classic Chicken Feast! Enjoy tender, juicy chicken
+                                    grilled to perfection, served with a side of creamy mashed potatoes, crisp coleslaw,
+                                    and
+                                    a buttery dinner roll. Perfect for a hearty meal that satisfies every craving.</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="briyanicombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Hyderabadi Biryani Combo</h1>
+                                <p class="card-text">Taste the authentic flavors of Hyderabad with our signature
+                                    Hyderabadi
+                                    Biryani. Slow-cooked, marinated chicken/mutton blends with fragrant rice and secret
+                                    spices to create an irresistible dish. Paired with tangy raita and spicy mirchi ka
+                                    salan, this combo is sure to transport your taste buds.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary ">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--momos page-->
+    <div class="headdr hide" id="momospage">
+        <header>momos FOR YOU , YOU WANT TO TRY THIS! ?</header>
+        <h1>ORDER IT NOW</h1>    
+        <div class="album py-5 bg-light">
+            <div class="container">    
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col ">
+                        <div class="card shadow-sm round">
+                            <img src="momocombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Momo Combo</h1>
+                                <p class="card-text">Indulge in a delectable platter of our handcrafted momos, served
+                                    steaming hot with a side of spicy tomato chutney and a refreshing drink.
+                                    This combo is a mix of juicy chicken, flavorful vegetable, and savory pork momos.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Grilled Meat Platter</h1>
+                                <p class="card-text">Our Grilled Meat Platter brings together a variety of meats—spicy
+                                    chicken wings, smoky beef ribs, and marinated pork chops. Served with crispy fries
+                                    and a
+                                    fresh garden salad for a balanced yet indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="pizzacombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Combo</h1>
+                                <p class="card-text">Gather around for a feast! Our Family Feast Combo includes two
+                                    large
+                                    pizzas, a side of golden fries, and a bottle of soda to share. Perfect for family
+                                    nights
+                                    or friendly gatherings!.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="rollcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Premium Roll Combo</h1>
+                                <p class="card-text">Dive into a gourmet selection of premium rolls, crafted with exotic
+                                    flavors and fresh ingredients. Enjoy the taste of tender chicken tikka, succulent
+                                    lamb,
+                                    and vibrant veggies, all packed in one delicious combo for an unforgettable meal
+                                    experience.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="chowmin.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Chow Mein Combo</h1>
+                                <p class="card-text">Bring the family together with our Family Feast Chow Mein Combo.
+                                    Generous portions of stir-fried noodles with chicken, beef, and veggies,
+                                    complemented by
+                                    sides of crispy spring rolls and sweet chili dipping sauce, perfect for sharing.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="friedrice.jpg" class="thumnail round" alt="">
+                            <div class="card-body">
+                                <h1 class="title">Chicken Fried Rice Combo</h1>
+                                <p class="card-text">Enjoy tender chicken chunks stir-fried with seasoned rice, crunchy
+                                    vegetables, and aromatic spices. Paired with a serving of chicken wings and a tangy
+                                    chili sauce, this combo is a feast for the senses.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="vegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">North Indian Veg Feast Combo</h1>
+                                <p class="card-text">A royal spread of North Indian delicacies featuring shahi paneer,
+                                    dal
+                                    makhani, pulao, butter naan, and a crisp vegetable salad. Paired with raita and
+                                    gulab
+                                    jamun for dessert, it’s a truly indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Chicken Feast Combo</h1>
+                                <p class="card-text">Indulge in our Classic Chicken Feast! Enjoy tender, juicy chicken
+                                    grilled to perfection, served with a side of creamy mashed potatoes, crisp coleslaw,
+                                    and
+                                    a buttery dinner roll. Perfect for a hearty meal that satisfies every craving.</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="briyanicombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Hyderabadi Biryani Combo</h1>
+                                <p class="card-text">Taste the authentic flavors of Hyderabad with our signature
+                                    Hyderabadi
+                                    Biryani. Slow-cooked, marinated chicken/mutton blends with fragrant rice and secret
+                                    spices to create an irresistible dish. Paired with tangy raita and spicy mirchi ka
+                                    salan, this combo is sure to transport your taste buds.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary ">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--dimsum page-->
+    <div class="headdr hide" id="dimsumpage">
+        <header>momos FOR YOU , YOU WANT TO TRY THIS! ?</header>
+        <h1>ORDER IT NOW</h1>    
+        <div class="album py-5 bg-light">
+            <div class="container">    
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col ">
+                        <div class="card shadow-sm round">
+                            <img src="momocombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Momo Combo</h1>
+                                <p class="card-text">Indulge in a delectable platter of our handcrafted momos, served
+                                    steaming hot with a side of spicy tomato chutney and a refreshing drink.
+                                    This combo is a mix of juicy chicken, flavorful vegetable, and savory pork momos.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Grilled Meat Platter</h1>
+                                <p class="card-text">Our Grilled Meat Platter brings together a variety of meats—spicy
+                                    chicken wings, smoky beef ribs, and marinated pork chops. Served with crispy fries
+                                    and a
+                                    fresh garden salad for a balanced yet indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="pizzacombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Combo</h1>
+                                <p class="card-text">Gather around for a feast! Our Family Feast Combo includes two
+                                    large
+                                    pizzas, a side of golden fries, and a bottle of soda to share. Perfect for family
+                                    nights
+                                    or friendly gatherings!.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="rollcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Premium Roll Combo</h1>
+                                <p class="card-text">Dive into a gourmet selection of premium rolls, crafted with exotic
+                                    flavors and fresh ingredients. Enjoy the taste of tender chicken tikka, succulent
+                                    lamb,
+                                    and vibrant veggies, all packed in one delicious combo for an unforgettable meal
+                                    experience.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="chowmin.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Chow Mein Combo</h1>
+                                <p class="card-text">Bring the family together with our Family Feast Chow Mein Combo.
+                                    Generous portions of stir-fried noodles with chicken, beef, and veggies,
+                                    complemented by
+                                    sides of crispy spring rolls and sweet chili dipping sauce, perfect for sharing.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="friedrice.jpg" class="thumnail round" alt="">
+                            <div class="card-body">
+                                <h1 class="title">Chicken Fried Rice Combo</h1>
+                                <p class="card-text">Enjoy tender chicken chunks stir-fried with seasoned rice, crunchy
+                                    vegetables, and aromatic spices. Paired with a serving of chicken wings and a tangy
+                                    chili sauce, this combo is a feast for the senses.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="vegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">North Indian Veg Feast Combo</h1>
+                                <p class="card-text">A royal spread of North Indian delicacies featuring shahi paneer,
+                                    dal
+                                    makhani, pulao, butter naan, and a crisp vegetable salad. Paired with raita and
+                                    gulab
+                                    jamun for dessert, it’s a truly indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Chicken Feast Combo</h1>
+                                <p class="card-text">Indulge in our Classic Chicken Feast! Enjoy tender, juicy chicken
+                                    grilled to perfection, served with a side of creamy mashed potatoes, crisp coleslaw,
+                                    and
+                                    a buttery dinner roll. Perfect for a hearty meal that satisfies every craving.</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="briyanicombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Hyderabadi Biryani Combo</h1>
+                                <p class="card-text">Taste the authentic flavors of Hyderabad with our signature
+                                    Hyderabadi
+                                    Biryani. Slow-cooked, marinated chicken/mutton blends with fragrant rice and secret
+                                    spices to create an irresistible dish. Paired with tangy raita and spicy mirchi ka
+                                    salan, this combo is sure to transport your taste buds.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary ">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--burger page-->
+    <div class="headdr hide" id="burgerpage">
+        <header>momos FOR YOU , YOU WANT TO TRY THIS! ?</header>
+        <h1>ORDER IT NOW</h1>    
+        <div class="album py-5 bg-light">
+            <div class="container">    
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col ">
+                        <div class="card shadow-sm round">
+                            <img src="momocombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Momo Combo</h1>
+                                <p class="card-text">Indulge in a delectable platter of our handcrafted momos, served
+                                    steaming hot with a side of spicy tomato chutney and a refreshing drink.
+                                    This combo is a mix of juicy chicken, flavorful vegetable, and savory pork momos.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Grilled Meat Platter</h1>
+                                <p class="card-text">Our Grilled Meat Platter brings together a variety of meats—spicy
+                                    chicken wings, smoky beef ribs, and marinated pork chops. Served with crispy fries
+                                    and a
+                                    fresh garden salad for a balanced yet indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="pizzacombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Combo</h1>
+                                <p class="card-text">Gather around for a feast! Our Family Feast Combo includes two
+                                    large
+                                    pizzas, a side of golden fries, and a bottle of soda to share. Perfect for family
+                                    nights
+                                    or friendly gatherings!.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="rollcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Premium Roll Combo</h1>
+                                <p class="card-text">Dive into a gourmet selection of premium rolls, crafted with exotic
+                                    flavors and fresh ingredients. Enjoy the taste of tender chicken tikka, succulent
+                                    lamb,
+                                    and vibrant veggies, all packed in one delicious combo for an unforgettable meal
+                                    experience.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="chowmin.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Chow Mein Combo</h1>
+                                <p class="card-text">Bring the family together with our Family Feast Chow Mein Combo.
+                                    Generous portions of stir-fried noodles with chicken, beef, and veggies,
+                                    complemented by
+                                    sides of crispy spring rolls and sweet chili dipping sauce, perfect for sharing.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="friedrice.jpg" class="thumnail round" alt="">
+                            <div class="card-body">
+                                <h1 class="title">Chicken Fried Rice Combo</h1>
+                                <p class="card-text">Enjoy tender chicken chunks stir-fried with seasoned rice, crunchy
+                                    vegetables, and aromatic spices. Paired with a serving of chicken wings and a tangy
+                                    chili sauce, this combo is a feast for the senses.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="vegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">North Indian Veg Feast Combo</h1>
+                                <p class="card-text">A royal spread of North Indian delicacies featuring shahi paneer,
+                                    dal
+                                    makhani, pulao, butter naan, and a crisp vegetable salad. Paired with raita and
+                                    gulab
+                                    jamun for dessert, it’s a truly indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Chicken Feast Combo</h1>
+                                <p class="card-text">Indulge in our Classic Chicken Feast! Enjoy tender, juicy chicken
+                                    grilled to perfection, served with a side of creamy mashed potatoes, crisp coleslaw,
+                                    and
+                                    a buttery dinner roll. Perfect for a hearty meal that satisfies every craving.</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="briyanicombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Hyderabadi Biryani Combo</h1>
+                                <p class="card-text">Taste the authentic flavors of Hyderabad with our signature
+                                    Hyderabadi
+                                    Biryani. Slow-cooked, marinated chicken/mutton blends with fragrant rice and secret
+                                    spices to create an irresistible dish. Paired with tangy raita and spicy mirchi ka
+                                    salan, this combo is sure to transport your taste buds.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary ">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--pizza page-->
+    <div class="headdr hide" id="pizzapage">
+        <header>momos FOR YOU , YOU WANT TO TRY THIS! ?</header>
+        <h1>ORDER IT NOW</h1>    
+        <div class="album py-5 bg-light">
+            <div class="container">    
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col ">
+                        <div class="card shadow-sm round">
+                            <img src="momocombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Momo Combo</h1>
+                                <p class="card-text">Indulge in a delectable platter of our handcrafted momos, served
+                                    steaming hot with a side of spicy tomato chutney and a refreshing drink.
+                                    This combo is a mix of juicy chicken, flavorful vegetable, and savory pork momos.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Grilled Meat Platter</h1>
+                                <p class="card-text">Our Grilled Meat Platter brings together a variety of meats—spicy
+                                    chicken wings, smoky beef ribs, and marinated pork chops. Served with crispy fries
+                                    and a
+                                    fresh garden salad for a balanced yet indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="pizzacombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Combo</h1>
+                                <p class="card-text">Gather around for a feast! Our Family Feast Combo includes two
+                                    large
+                                    pizzas, a side of golden fries, and a bottle of soda to share. Perfect for family
+                                    nights
+                                    or friendly gatherings!.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="rollcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Premium Roll Combo</h1>
+                                <p class="card-text">Dive into a gourmet selection of premium rolls, crafted with exotic
+                                    flavors and fresh ingredients. Enjoy the taste of tender chicken tikka, succulent
+                                    lamb,
+                                    and vibrant veggies, all packed in one delicious combo for an unforgettable meal
+                                    experience.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="chowmin.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Chow Mein Combo</h1>
+                                <p class="card-text">Bring the family together with our Family Feast Chow Mein Combo.
+                                    Generous portions of stir-fried noodles with chicken, beef, and veggies,
+                                    complemented by
+                                    sides of crispy spring rolls and sweet chili dipping sauce, perfect for sharing.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="friedrice.jpg" class="thumnail round" alt="">
+                            <div class="card-body">
+                                <h1 class="title">Chicken Fried Rice Combo</h1>
+                                <p class="card-text">Enjoy tender chicken chunks stir-fried with seasoned rice, crunchy
+                                    vegetables, and aromatic spices. Paired with a serving of chicken wings and a tangy
+                                    chili sauce, this combo is a feast for the senses.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="vegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">North Indian Veg Feast Combo</h1>
+                                <p class="card-text">A royal spread of North Indian delicacies featuring shahi paneer,
+                                    dal
+                                    makhani, pulao, butter naan, and a crisp vegetable salad. Paired with raita and
+                                    gulab
+                                    jamun for dessert, it’s a truly indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Chicken Feast Combo</h1>
+                                <p class="card-text">Indulge in our Classic Chicken Feast! Enjoy tender, juicy chicken
+                                    grilled to perfection, served with a side of creamy mashed potatoes, crisp coleslaw,
+                                    and
+                                    a buttery dinner roll. Perfect for a hearty meal that satisfies every craving.</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="briyanicombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Hyderabadi Biryani Combo</h1>
+                                <p class="card-text">Taste the authentic flavors of Hyderabad with our signature
+                                    Hyderabadi
+                                    Biryani. Slow-cooked, marinated chicken/mutton blends with fragrant rice and secret
+                                    spices to create an irresistible dish. Paired with tangy raita and spicy mirchi ka
+                                    salan, this combo is sure to transport your taste buds.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary ">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--bakery page-->
+    <div class="headdr hide" id="bakreypage">
+        <header>momos FOR YOU , YOU WANT TO TRY THIS! ?</header>
+        <h1>ORDER IT NOW</h1>    
+        <div class="album py-5 bg-light">
+            <div class="container">    
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col ">
+                        <div class="card shadow-sm round">
+                            <img src="momocombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Momo Combo</h1>
+                                <p class="card-text">Indulge in a delectable platter of our handcrafted momos, served
+                                    steaming hot with a side of spicy tomato chutney and a refreshing drink.
+                                    This combo is a mix of juicy chicken, flavorful vegetable, and savory pork momos.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Grilled Meat Platter</h1>
+                                <p class="card-text">Our Grilled Meat Platter brings together a variety of meats—spicy
+                                    chicken wings, smoky beef ribs, and marinated pork chops. Served with crispy fries
+                                    and a
+                                    fresh garden salad for a balanced yet indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="pizzacombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Combo</h1>
+                                <p class="card-text">Gather around for a feast! Our Family Feast Combo includes two
+                                    large
+                                    pizzas, a side of golden fries, and a bottle of soda to share. Perfect for family
+                                    nights
+                                    or friendly gatherings!.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="rollcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Premium Roll Combo</h1>
+                                <p class="card-text">Dive into a gourmet selection of premium rolls, crafted with exotic
+                                    flavors and fresh ingredients. Enjoy the taste of tender chicken tikka, succulent
+                                    lamb,
+                                    and vibrant veggies, all packed in one delicious combo for an unforgettable meal
+                                    experience.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="chowmin.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Chow Mein Combo</h1>
+                                <p class="card-text">Bring the family together with our Family Feast Chow Mein Combo.
+                                    Generous portions of stir-fried noodles with chicken, beef, and veggies,
+                                    complemented by
+                                    sides of crispy spring rolls and sweet chili dipping sauce, perfect for sharing.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="friedrice.jpg" class="thumnail round" alt="">
+                            <div class="card-body">
+                                <h1 class="title">Chicken Fried Rice Combo</h1>
+                                <p class="card-text">Enjoy tender chicken chunks stir-fried with seasoned rice, crunchy
+                                    vegetables, and aromatic spices. Paired with a serving of chicken wings and a tangy
+                                    chili sauce, this combo is a feast for the senses.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="vegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">North Indian Veg Feast Combo</h1>
+                                <p class="card-text">A royal spread of North Indian delicacies featuring shahi paneer,
+                                    dal
+                                    makhani, pulao, butter naan, and a crisp vegetable salad. Paired with raita and
+                                    gulab
+                                    jamun for dessert, it’s a truly indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Chicken Feast Combo</h1>
+                                <p class="card-text">Indulge in our Classic Chicken Feast! Enjoy tender, juicy chicken
+                                    grilled to perfection, served with a side of creamy mashed potatoes, crisp coleslaw,
+                                    and
+                                    a buttery dinner roll. Perfect for a hearty meal that satisfies every craving.</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="briyanicombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Hyderabadi Biryani Combo</h1>
+                                <p class="card-text">Taste the authentic flavors of Hyderabad with our signature
+                                    Hyderabadi
+                                    Biryani. Slow-cooked, marinated chicken/mutton blends with fragrant rice and secret
+                                    spices to create an irresistible dish. Paired with tangy raita and spicy mirchi ka
+                                    salan, this combo is sure to transport your taste buds.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary ">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--slider-->
+    <div id="carouselExampleControls" class="carousel slide m-2" data-bs-interval="2000" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img1 (2).jpg" class="d-block w-100 sld" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img2 (2).jpg" class="d-block w-100 sld" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img4.jpg" class="d-block w-100 sld" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--product in home page-->
+
+    <div class="headdr" id="combo">
+        <header>Have You Ever Tried This Combo Pack Yet! ?</header>
+        <h1>What Are You Waiting For</h1>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col ">
+                        <div class="card shadow-sm round">
+                            <img src="momocombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Momo Combo</h1>
+                                <p class="card-text">Indulge in a delectable platter of our handcrafted momos, served
+                                    steaming hot with a side of spicy tomato chutney and a refreshing drink.
+                                    This combo is a mix of juicy chicken, flavorful vegetable, and savory pork momos.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Grilled Meat Platter</h1>
+                                <p class="card-text">Our Grilled Meat Platter brings together a variety of meats—spicy
+                                    chicken wings, smoky beef ribs, and marinated pork chops. Served with crispy fries
+                                    and a
+                                    fresh garden salad for a balanced yet indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="pizzacombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Combo</h1>
+                                <p class="card-text">Gather around for a feast! Our Family Feast Combo includes two
+                                    large
+                                    pizzas, a side of golden fries, and a bottle of soda to share. Perfect for family
+                                    nights
+                                    or friendly gatherings!.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="rollcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Premium Roll Combo</h1>
+                                <p class="card-text">Dive into a gourmet selection of premium rolls, crafted with exotic
+                                    flavors and fresh ingredients. Enjoy the taste of tender chicken tikka, succulent
+                                    lamb,
+                                    and vibrant veggies, all packed in one delicious combo for an unforgettable meal
+                                    experience.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="chowmin.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Family Feast Chow Mein Combo</h1>
+                                <p class="card-text">Bring the family together with our Family Feast Chow Mein Combo.
+                                    Generous portions of stir-fried noodles with chicken, beef, and veggies,
+                                    complemented by
+                                    sides of crispy spring rolls and sweet chili dipping sauce, perfect for sharing.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="friedrice.jpg" class="thumnail round" alt="">
+                            <div class="card-body">
+                                <h1 class="title">Chicken Fried Rice Combo</h1>
+                                <p class="card-text">Enjoy tender chicken chunks stir-fried with seasoned rice, crunchy
+                                    vegetables, and aromatic spices. Paired with a serving of chicken wings and a tangy
+                                    chili sauce, this combo is a feast for the senses.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="vegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">North Indian Veg Feast Combo</h1>
+                                <p class="card-text">A royal spread of North Indian delicacies featuring shahi paneer,
+                                    dal
+                                    makhani, pulao, butter naan, and a crisp vegetable salad. Paired with raita and
+                                    gulab
+                                    jamun for dessert, it’s a truly indulgent meal.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="nonvegcombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Classic Chicken Feast Combo</h1>
+                                <p class="card-text">Indulge in our Classic Chicken Feast! Enjoy tender, juicy chicken
+                                    grilled to perfection, served with a side of creamy mashed potatoes, crisp coleslaw,
+                                    and
+                                    a buttery dinner roll. Perfect for a hearty meal that satisfies every craving.</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm round">
+                            <img src="briyanicombo.jpg" class="thumnail round" alt="">
+
+                            <div class="card-body">
+                                <h1 class="title">Hyderabadi Biryani Combo</h1>
+                                <p class="card-text">Taste the authentic flavors of Hyderabad with our signature
+                                    Hyderabadi
+                                    Biryani. Slow-cooked, marinated chicken/mutton blends with fragrant rice and secret
+                                    spices to create an irresistible dish. Paired with tangy raita and spicy mirchi ka
+                                    salan, this combo is sure to transport your taste buds.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary ">View
+                                            Details</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="text-center text-lg-start bg-body-tertiary text-white bg-dark">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>FOOD_HUB
+                        </h6>
+                        <p>
+                            FOOD_HUB specializes in crafting high-quality, delicious, and nutritious food products.
+                            We combine tradition with innovation to deliver fresh, flavorful meals and snacks that fit
+                            modern lifestyles.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Company
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">About</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Carrer</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Team</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Legal
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Terms & Conditions</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Cookie Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Privacy Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Investor Relation</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> ASSAM,GUWAHATI 781027, IN</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            FOODHUB@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +91 7823451645</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FOOD_HUB.COM</a>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</html>
