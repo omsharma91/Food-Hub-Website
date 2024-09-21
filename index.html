@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FOOD_HUB</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -56,9 +57,63 @@
 
     <!--cart section-->
     <div class="cartpage hide" id="cartpages">
-        <div>
-            <h1 id="crt">nothing to show here</h1>
-        </div>
+        <section class="addToCartElement">
+            <div class="cartcontainer">
+                <section>
+                    <div id="productCartContainer"></div>
+                </section>
+
+                <!--<section class="productCartTotalElem">
+                    <div class="productCartTotalElement">
+                        <p>Selected Offer Summary</p>
+                        <div class="productOrderTotal">
+                            <div>
+                                <p>Sub Total:</p>
+                                <p class="productSubTotal">0</p>
+                            </div>
+                            <div>
+                                <p>Tax:</p>
+                                <p class="productTax">₹50</p>
+                            </div>
+                            <hr />
+                            <div>
+                                <p>Final Total:</p>
+                                <p class="productFinalTotal">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>-->
+            </div>
+        </section>
+
+        <!-- Template for a product -->
+        <section id="productCartTemplate">
+            <div class="carts" id="cartValue">
+                <article class="cartInformation">
+                    <div>
+                        <span class="cartCategory">non veg</span>
+                    </div>
+                    <div class="cartimageContainer">
+                        <img class="productImage" src="rollcombo.jpg" alt="" />
+                    </div>
+
+                    <h2 class="cartProductName">roll</h2>
+
+                    <p class="cartProductPrice">599</p>
+
+                    <div class="stockelement">
+                        <button class="cartincrement">+</button>
+                        <p class="productquantity">1</p>
+                        <button class="cartdecrement">-</button>
+                    </div>
+
+                    <!-- <button class="add-to-cart-button">Add To Cart</button> -->
+                    <button class="add-to-cart-button remove-to-cart-button">
+                        Remove
+                    </button>
+                </article>
+            </div>
+        </section>
     </div>
 
     <!--help section-->
@@ -125,73 +180,73 @@
         </div>
         <!--faq section-->
         <h1>FAQs</h1>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        Customer Care Number
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                    aria-labelledby="panelsStayOpen-headingOne">
-                    <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                        collapse
-                        plugin adds the appropriate classes that we use to style each element. These classes control the
-                        overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-                        this with custom CSS or overriding our default variables. It's also worth noting that just about
-                        any
-                        HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Customer Care Number
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about
+                    any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        I Want To Provide Feedback
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that
-                        just about any HTML can go within the <code>.accordion-body</code>, though the transition does
-                        limit
-                        overflow.
-                    </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    I Want To Provide Feedback
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                    that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does
+                    limit
+                    overflow.
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        I Want To Cancelle My Order
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that
-                        just about any HTML can go within the <code>.accordion-body</code>, though the transition does
-                        limit
-                        overflow.
-                    </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    I Want To Cancelle My Order
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                    that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does
+                    limit
+                    overflow.
                 </div>
             </div>
+        </div>
 
-    </div>        
+    </div>
 
     <!--search page-->
     <div class="search m-4 p-3 g-3 hide" id="searchpage">
@@ -202,7 +257,7 @@
         </div>
         <div class="contain" id="searchproduct">
             <div class="box">
-                <img src="roll_icon.jpg" alt=""  class="icon">
+                <img src="roll_icon.jpg" alt="" class="icon">
                 <h1>Roll</h1>
             </div>
             <div class="box">
@@ -210,7 +265,7 @@
                 <h1>Briyani</h1>
             </div>
             <div class="box">
-                <img src="momoicon.jpg" alt=""  class="icon">
+                <img src="momoicon.jpg" alt="" class="icon">
                 <h1>Momo</h1>
             </div>
             <div class="box">
@@ -493,208 +548,67 @@
     </div>
 
     <!--roll page -->
-    <div class="headdr hide" id="rollpage">
-            <header>ROLL FOR YOU , YOU WANT TO TRY THIS! ?</header>
-            <h1>ORDER IT NOW</h1>    
-            <div class="album py-5 bg-light">
-                <div class="container">    
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col ">
-                            <div class="card shadow-sm round">
-                                <img src="momocombo.jpg" class="thumnail round" alt="">
-    
-                                <div class="card-body">
-                                    <h1 class="title">Classic Momo Combo</h1>
-                                    <p class="card-text">Indulge in a delectable platter of our handcrafted momos, served
-                                        steaming hot with a side of spicy tomato chutney and a refreshing drink.
-                                        This combo is a mix of juicy chicken, flavorful vegetable, and savory pork momos.
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">View
-                                                Details</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm round">
-                                <img src="nonvegcombo.jpg" class="thumnail round" alt="">
-    
-                                <div class="card-body">
-                                    <h1 class="title">Grilled Meat Platter</h1>
-                                    <p class="card-text">Our Grilled Meat Platter brings together a variety of meats—spicy
-                                        chicken wings, smoky beef ribs, and marinated pork chops. Served with crispy fries
-                                        and a
-                                        fresh garden salad for a balanced yet indulgent meal.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">View
-                                                Details</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm round">
-                                <img src="pizzacombo.jpg" class="thumnail round" alt="">
-    
-                                <div class="card-body">
-                                    <h1 class="title">Family Feast Combo</h1>
-                                    <p class="card-text">Gather around for a feast! Our Family Feast Combo includes two
-                                        large
-                                        pizzas, a side of golden fries, and a bottle of soda to share. Perfect for family
-                                        nights
-                                        or friendly gatherings!.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">View
-                                                Details</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="card shadow-sm round">
-                                <img src="rollcombo.jpg" class="thumnail round" alt="">
-    
-                                <div class="card-body">
-                                    <h1 class="title">Premium Roll Combo</h1>
-                                    <p class="card-text">Dive into a gourmet selection of premium rolls, crafted with exotic
-                                        flavors and fresh ingredients. Enjoy the taste of tender chicken tikka, succulent
-                                        lamb,
-                                        and vibrant veggies, all packed in one delicious combo for an unforgettable meal
-                                        experience.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">View
-                                                Details</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm round">
-                                <img src="chowmin.jpg" class="thumnail round" alt="">
-    
-                                <div class="card-body">
-                                    <h1 class="title">Family Feast Chow Mein Combo</h1>
-                                    <p class="card-text">Bring the family together with our Family Feast Chow Mein Combo.
-                                        Generous portions of stir-fried noodles with chicken, beef, and veggies,
-                                        complemented by
-                                        sides of crispy spring rolls and sweet chili dipping sauce, perfect for sharing.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">View
-                                                Details</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm round">
-                                <img src="friedrice.jpg" class="thumnail round" alt="">
-                                <div class="card-body">
-                                    <h1 class="title">Chicken Fried Rice Combo</h1>
-                                    <p class="card-text">Enjoy tender chicken chunks stir-fried with seasoned rice, crunchy
-                                        vegetables, and aromatic spices. Paired with a serving of chicken wings and a tangy
-                                        chili sauce, this combo is a feast for the senses.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">View
-                                                Details</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="card shadow-sm round">
-                                <img src="vegcombo.jpg" class="thumnail round" alt="">
-    
-                                <div class="card-body">
-                                    <h1 class="title">North Indian Veg Feast Combo</h1>
-                                    <p class="card-text">A royal spread of North Indian delicacies featuring shahi paneer,
-                                        dal
-                                        makhani, pulao, butter naan, and a crisp vegetable salad. Paired with raita and
-                                        gulab
-                                        jamun for dessert, it’s a truly indulgent meal.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">View
-                                                Details</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm round">
-                                <img src="nonvegcombo.jpg" class="thumnail round" alt="">
-    
-                                <div class="card-body">
-                                    <h1 class="title">Classic Chicken Feast Combo</h1>
-                                    <p class="card-text">Indulge in our Classic Chicken Feast! Enjoy tender, juicy chicken
-                                        grilled to perfection, served with a side of creamy mashed potatoes, crisp coleslaw,
-                                        and
-                                        a buttery dinner roll. Perfect for a hearty meal that satisfies every craving.</p>
-    
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">View
-                                                Details</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm round">
-                                <img src="briyanicombo.jpg" class="thumnail round" alt="">
-    
-                                <div class="card-body">
-                                    <h1 class="title">Hyderabadi Biryani Combo</h1>
-                                    <p class="card-text">Taste the authentic flavors of Hyderabad with our signature
-                                        Hyderabadi
-                                        Biryani. Slow-cooked, marinated chicken/mutton blends with fragrant rice and secret
-                                        spices to create an irresistible dish. Paired with tangy raita and spicy mirchi ka
-                                        salan, this combo is sure to transport your taste buds.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-primary ">View
-                                                Details</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
+
+    <section class="container hide" id="rollpage">
+        <div class="head">
+            <h1 class="heading">Welcome to our shop !</h1>
+            <p>Here Are The Roll You Can Give a Try</p>
+        </div>
+        <div class="productcontainer" id="container">
+
+        </div>
+    </section>
+
+    <template id="producttemplate">
+        <div class="cards" id="cardvalue">
+            <article class="information">
+                <span class="category">computer</span>
+                <div class="productrating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="imgcontainer">
+                    <img src="" alt="" class="productimg">
+                </div>
+                <h2 class="productname">laptop</h2>
+
+                <p class="productdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quia.
+                </p>
+                <div class="productpriceelement">
+                    <p class="productelement">Amount:</p>
+                    <p class="productactualprice">$599 </p>
+                    <del>
+                        <p class="realprice"></p>
+                    </del>
+                </div>
+                <div class="productstockelement">
+                    <p class="productelement">Stock :</p>
+                    <p class="productstock">3</p>
+                    <div class="productquantityelement">
+                        <p class="productproperty">Quantity:</p>
+                        <div class="stockelement">
+                            <button class="cartincrement">+</button>
+                            <p class="productquantity">1</p>
+                            <button class="cartdecrement">-</button>
                         </div>
                     </div>
                 </div>
-            </div>
-    </div>
-    
+
+                <button class="addtocart">
+                    <i class="fas fa-cart-shopping"></i> Add to Cart</button>
+            </article>
+        </div>
+    </template>
+
+
     <!--briyani page-->
     <div class="headdr hide" id="briyanipage">
         <header>briyani FOR YOU , YOU WANT TO TRY THIS! ?</header>
-        <h1>ORDER IT NOW</h1>    
+        <h1>ORDER IT NOW</h1>
         <div class="album py-5 bg-light">
-            <div class="container">    
+            <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col ">
                         <div class="card shadow-sm round">
@@ -889,9 +803,9 @@
     <!--momos page-->
     <div class="headdr hide" id="momospage">
         <header>momos FOR YOU , YOU WANT TO TRY THIS! ?</header>
-        <h1>ORDER IT NOW</h1>    
+        <h1>ORDER IT NOW</h1>
         <div class="album py-5 bg-light">
-            <div class="container">    
+            <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col ">
                         <div class="card shadow-sm round">
@@ -1086,9 +1000,9 @@
     <!--dimsum page-->
     <div class="headdr hide" id="dimsumpage">
         <header>momos FOR YOU , YOU WANT TO TRY THIS! ?</header>
-        <h1>ORDER IT NOW</h1>    
+        <h1>ORDER IT NOW</h1>
         <div class="album py-5 bg-light">
-            <div class="container">    
+            <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col ">
                         <div class="card shadow-sm round">
@@ -1283,9 +1197,9 @@
     <!--burger page-->
     <div class="headdr hide" id="burgerpage">
         <header>momos FOR YOU , YOU WANT TO TRY THIS! ?</header>
-        <h1>ORDER IT NOW</h1>    
+        <h1>ORDER IT NOW</h1>
         <div class="album py-5 bg-light">
-            <div class="container">    
+            <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col ">
                         <div class="card shadow-sm round">
@@ -1480,9 +1394,9 @@
     <!--pizza page-->
     <div class="headdr hide" id="pizzapage">
         <header>momos FOR YOU , YOU WANT TO TRY THIS! ?</header>
-        <h1>ORDER IT NOW</h1>    
+        <h1>ORDER IT NOW</h1>
         <div class="album py-5 bg-light">
-            <div class="container">    
+            <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col ">
                         <div class="card shadow-sm round">
@@ -1677,9 +1591,9 @@
     <!--bakery page-->
     <div class="headdr hide" id="bakreypage">
         <header>momos FOR YOU , YOU WANT TO TRY THIS! ?</header>
-        <h1>ORDER IT NOW</h1>    
+        <h1>ORDER IT NOW</h1>
         <div class="album py-5 bg-light">
-            <div class="container">    
+            <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col ">
                         <div class="card shadow-sm round">
@@ -2186,7 +2100,10 @@
         </div>
     </footer>
 </body>
+
+
 <script src="app.js"></script>
+<script type="module" src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>

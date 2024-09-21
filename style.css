@@ -77,16 +77,16 @@ h1{
     font-size: 3rem;
 }
 .headdr h1{
-    font-size: 3rem !important;
+    font-size: 1.5rem !important;
 }
 .title{
     margin: 1rem;
     font-size: 1.8rem !important;
 }
-button:hover{
+/*button:hover{
     background-color: transparent !important;
-    color: black;
-}
+    color: black !important;
+}*/
 .slidebar{
     position:fixed;
     right: 0;
@@ -142,11 +142,7 @@ button:hover{
     height: 100vh;
 }
 .cartpage{
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    margin-top: 14rem;
-    margin-left: 20rem;
+   
 }
 #crt{
     border: 2px solid blue;
